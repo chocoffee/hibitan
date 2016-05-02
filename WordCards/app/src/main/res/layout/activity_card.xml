@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="jp.blog.chocoffee.wordcards.CardActivity"
+    android:background="@drawable/bg3">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="10dp">
+
+        <TextView android:text="apple" android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/txtEng"
+            android:background="#affffcaa"
+            android:textSize="30dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="60sp"
+            android:text="Show answer"
+            android:id="@+id/btnAns"
+            android:onClick="onShowAnsClickAction"
+            android:src="@drawable/show_answer"
+            android:background="@null"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="りんご"
+            android:id="@+id/txtJap"
+            android:background="#8fb7ffaa"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Prev"
+                android:id="@+id/btnPrev"
+                android:onClick="onPrevClickAction"
+                android:src="@drawable/prev"
+                android:background="@null"
+                android:scaleType="fitStart"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:id="@+id/btnNext"
+                android:onClick="onNextClickAction"
+                android:src="@drawable/next"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                android:background="@null" />
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Finish"
+            android:id="@+id/btnFinish"
+            android:onClick="onFinishClickAction"
+            android:src="@drawable/finish"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNowState"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jp.blog.chocoffee.wordcards.MainActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg3">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ランダムモード"
+        android:id="@+id/cbx" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="英語→日本語"
+            android:id="@+id/japEng"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日本語→英語"
+            android:id="@+id/engJap" />
+    </RadioGroup>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:text="START"
+        android:id="@+id/btnStart"
+        android:onClick="onStartClickAction"
+        android:src="@drawable/start01"
+        android:background="@null"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:text="ADD"
+        android:id="@+id/btnEdit"
+        android:onClick="onEditClickAction"
+        android:src="@drawable/add01"
+        android:background="@null"
+        android:scaleType="fitStart"
+        android:adjustViewBounds="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:text="EDIT"
+        android:id="@+id/btnList"
+        android:onClick="onListClickAction"
+        android:src="@drawable/edit01"
+        android:background="@null"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:layout_gravity="center_horizontal" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:text="EXIT"
+        android:id="@+id/btnExit"
+        android:onClick="onExitClickAction"
+        android:src="@drawable/exit01"
+        android:background="@null"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart" />
+
+</LinearLayout>
